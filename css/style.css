@@ -1,0 +1,136 @@
+/*Reset incial*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*Definicion de variables de CSS*/
+:root {
+    /*Articulos de lista*/
+    --size-li: 18px;
+    --font-li:'Be Vietnam Pro', sans-serif;
+    --padding-li: 8px;
+    --color-li: black;
+    --radio-li: 7px;
+    --weight-li: bolt;
+    
+
+    /*Titulo o Encabezado*/
+    --size-titulo: 45px;
+    --font-titulo:'Be Vietnam Pro', sans-serif;
+    --spacing-titulo: 1px;
+
+    /*Subtitulo*/
+    --size-subtitulo: 22px;
+    --font-subtitulo: 'Be Vietnam Pro', sans-serif;
+
+    /*Cuerpo*/
+    --size-cuerpo: 22px;
+    --font-cuerpo: 'Be Vietnam Pro', sans-serif;
+    --line-cuerpo:1.6 em;
+}
+/*Header*/
+/*Fondo con gradiente de header, este queda fijo al bajar en la pagina*/
+header {
+    background: #FFEFBA;  
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+/*Ajuste de caja, modificacion de estilo del enlace y articulos de la lista*/
+.li-nav {
+    display: inline;
+    font-size: var(--size-li);
+    font-family: var(--font-li);
+    padding: var(--padding-li);
+    color: var(--color-li);
+    list-style-type: none;
+    text-decoration: none;
+}
+/*Alineacion y justificacion de logo y nav*/
+.div-logo-nav {
+    display: flex;
+    justify-content: space-between; /*El espacio disponible se reparte entre los elementos*/
+    align-items: center; /*Los alinea en el centro*/
+    padding: 0 2px;
+}
+
+/*Main*/
+main{
+    background-color: rosybrown;
+}
+.div-main{
+    background-image: url('../imagenes/foto-inicio.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-blend-mode:screen;
+}
+h1{
+    text-align: center;
+    margin: 120px 190px 10px 190px;
+    padding: 150px;
+    font-size: var(--size-titulo);
+    font-family: var(--font-titulo);
+    letter-spacing: 20px;
+    color: inherit;
+}
+
+/*Seccion 1*/
+.seccion-uno{
+    background-color: wheat;
+   
+}
+.div-uno{
+    text-align: center;
+    margin: 20px 300px;
+    padding: 20px;
+}
+.sec-uno{
+    font-size: var(--font-subtitulo);
+    font-family: var(--font-subtitulo);
+    border-bottom: 1px solid black;
+    padding-bottom: 6px;
+}
+.p-uno{
+    padding-top: 6px;
+    font-size:var(--size-cuerpo);
+    font-family: var(--font-cuerpo);
+    line-height: var(--line-cuerpo);
+}
+/*Seccion 2*/
+.descuento{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;;
+  }
+  
+  .descuentos > div {
+    display: inline;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+/*Seccion 3*/
+.div-tienda {
+    display: flex;
+  
+  }
+  
+  .div-tienda > div { 
+    margin: 60px;
+    padding: 80px;
+    font-size: 150px;
+  }
+
+/*Seccion 4*/
+
+/*Seccion 5*/
+
+/*Seccion 6*/
+
+/*Footer*/
