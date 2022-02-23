@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;200&display=swap" rel="stylesheet">
 
+    <!--Enlace con Css local-->
+    <link rel="stylesheet" href="css/style.css">
+    
     <!--Especifico el titulo para la pagina HTML-->
     <title> JR | Beauty </title>
     <!--logo en el titulo-->
@@ -25,165 +28,243 @@
     
 </head>
 <body>
-    <!--Inicio header-->
-    <header>
-        <div class="div-logo-nav">
-             <!--logo centrado en la parte izquierda de la pantalla-->
-             <!--Logo de JR BEAUTY, el cual te redirige a index.html-->
-            <a href="index.html">
-             <!--imagen de logo JR BEAUTY-->
-                <img src="imagenes/Logo.png" alt="logo juliana retta beauty">
+    <!--Inicio header / navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <img class="w-60" src="imagenes/Logo.png" alt="">
             </a>
-        
-            <!--Centrado en la parte derecha de la pantalla, un listado horizontal-->
-            <nav>
-                 <ul>
-                     <li class="li-nav"> 
-                         <a href="index.html" class="li-nav">Inicio</a>
-                     </li >
-                     <li  class="li-nav">
-                         <a href="#servicios" class="li-nav">Servicios</a>
-                     </li>
-                     <li class="li-nav">
-                         <a href="pages/novedades.html" class="li-nav">Novedades</a>
-                     </li>
-                     <li  class="li-nav">
-                         <a href="pages/reserva.html" class="li-nav">Reservas</a>
-                     </li>
-                     <li  class="li-nav">
-                         <a href="https://www.tiendanube.com/" target="_blank" class="li-nav">Tienda Online</a>
-                     </li>
-                 </ul>
-            </nav>
+            <button
+                class="navbar-toggler"
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <dv class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black">NOVEDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black">RESERVAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-black">TIENDA ONLINE</a>
+                    </li>
+                </ul>
+            </dv>
         </div>
-    </header>
+    </nav>
     <!--Fin header-->
 
-    <!--Inicio main:imagen de fondo-->
-    <main>
-        <div class="div-main">
-            <H1>JULIANA RETTA BEAUTY</H1>
+    <!--Inicio Banner Imagen-->
+    <div class="banner-imagen w100 vh-100">
+        <div class="content">
+            <h1 class="text-banner">La belleza comienza en el momento en que decides ser tú misma</h1>
         </div>
-    </main>
-    <!--fin main-->
-    
-    <!--Incio seccion 1: Descripcion de "Quienes somos", sobre una imagen del local-->
-    <section class="seccion-uno">
-        <div class="div-uno">
-        <h4 class="sec-uno">QUIENES SOMOS</h4>
-        <p class="p-uno">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, exercitationem ipsa. Assumenda, odio quaerat, nisi sequi reprehenderit exercitationem corrupti, nam consequuntur quo omnis nihil repellat! Eveniet reiciendis aliquid voluptatum impedit.
-        Ratione odio labore aut facilis, alias esse fugit deserunt dolores reprehenderit, quia dignissimos porro, nihil ab a nesciunt quibusdam odit ea temporibus rem quas. A fuga qui sapiente eligendi voluptate!
-        Necessitatibus quisquam provident at perferendis, pariatur mollitia nihil sequi ab quibusdam. Nobis neque molestiae amet nostrum natus ullam asperiores magni sunt quas ut voluptates officia facilis, ex laborum! Placeat, laborum?
-        Possimus tempore ea, ad consectetur accusamus voluptate maxime, praesentium exercitationem veritatis architecto expedita aut ullam voluptatum. Amet, deserunt sint, dolor minus sit consectetur, debitis praesentium sapiente error non aperiam sed?
-        Eaque incidunt soluta iusto ratione esse asperiores quibusdam beatae saepe. Blanditiis temporibus at quibusdam reiciendis ipsam quod perspiciatis, nesciunt nobis repellendus corporis magnam quis! Necessitatibus obcaecati excepturi quisquam voluptatibus itaque.</p>
-      
+    </div>
+    <!--fin Banner-->
+    <!--Incio seccion 1: Descripcion de "Quienes somos", sobre una imagen del local--> 
+    <div class=" section d-flex justify-content-center align-items-center  mt-4" >
+        <div class="container">
+            <div class="title text-center my-2">
+                <h2>Quienes somos</h2>
+            </div>
+           <div class="row">
+                <div class="col-lg-6 text-center bg-one my-3">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam error quae eligendi nam dolorem hic est cupiditate. Mollitia fuga placeat nobis ea. Error dolores pariatur dolorum fugiat libero eos?
+                    Totam nihil corporis iusto reiciendis maxime eius eum quae enim, ipsa voluptas dolorem tenetur, deleniti minima facere voluptatibus nemo quo illo sequi provident ratione at nobis consequatur accusamus. Velit, reiciendis.</h3>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100" src="imagenes/local-JRB.jpg" alt="">
+                </div>
+           </div>
         </div>
-    </section>
+    </div>
     <!--Fin de seccion 1-->
 
     <!--Incion de seccion 2: carrusel de fotos con informacion de descuento bancarios-->
-    <section>
-        <div class="descuentos">
-            <div>
-                <img src="imagenes/descuento-1.jpg" alt="30% off pagando tarjeta de credito BBVA y cuotas sin imtereses">
+    <section class="d-flex justify-content-center align-items-center bg-one mt-4">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/descuento-1.jpg" class="d-block w-60 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/descuento-2.jpg" class="d-block w-60 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/descuento-3.jpg" class="d-block w-60 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/descuento-4.jpg" class="d-block w-60 img-fluid" alt="...">
+              </div>
             </div>
-            <div>
-                <img src="imagenes/descuento-2.jpg" alt="40% off pagando con cuenta DNI del banco provincia">
-            </div>
-            <div>
-                <img src="imagenes/descuento-3.jpg" alt="15% off los dias miercoles pagando con tarjetas de credito santander y con 3 cuotas sin intereses">
-            </div>
-             <div>
-                <img src="imagenes/descuento-4.jpg" alt="15% off con tarjeta galicia y 20% con tarjeta galicia eminent, y 3 cuotas sin intereses">
-             </div>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
     <!--fin de seccion 2-->
 
     <!--Incio seccion 3: Vista previa a los productos de la tienda online-->
-    <section>
-        <div>
-            <h4>TIENDA ONLINE</h4>
-        <!--El texto "Ver + productos" nos redirige a la Tienda online-->
-        <a href="https://www.tiendanube.com/" target="_blank">Ver + productos</a>
-        <!--A continuacion se muestran 6 imagenes de los productos, cada una con un boton de "Comprar" las cuales nos dirigen a la Tienda online-->
-            <div class="div-tienda">
-                <img src="imagenes/Producto-1.jpeg" alt="Descripcion producto 1">
-                     <a href="https://www.tiendanube.com/" target="_blank">Comprar</a>
-                <img src="imagenes/Producto-2.jpeg" alt="Descripcion producto 2">
-                     <a href="https://www.tiendanube.com/" target="_blank">Comprar</a>
-                <img src="imagenes/Producto-3.jpeg" alt="Descripcion de producto 3">
-                     <a href="https://www.tiendanube.com/" target="_blank">Comprar</a>
-                <img src="imagenes/Producto-4.jpeg" alt="Descripcion de producto 4">
-                     <a href="https://www.tiendanube.com/" target="_blank">Comprar</a>
-                <img src="imagenes/Producto-5.jpeg" alt="Descripcion de producto 5">
-                     <a href="https://www.tiendanube.com/" target="_blank">Comprar</a>
-                <img src="imagenes/Producto-6.JPG" alt="Descripcion de producto 6">
-                     <a href="https://www.tiendanube.com/" target="_blank">Comprar</a>
+    <section class="tienda min-vh-100">
+        <div class="title text-center mt-4">
+                <h2 class="p-5">Tienda Online</h2>
+            </div>
+        <div class="container-lg">
+            <div class="row gy-5 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col">
+                    <img src="imagenes/Producto-1.jpeg" class="tienda-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/Producto-2.jpeg" class="tienda-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/Producto-3.jpeg" class="tienda-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/Producto-4.jpeg" class="tienda-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/Producto-5.jpeg" class="tienda-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/Producto-6.JPG" class="tienda-item" alt="">
+                </div>
+            </div>
+            <div class="button d-grid gap-2 d-md-flex justify-content-md-center p-3 mt-5">
+                <a href="https://www.tiendanube.com/" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">VER MAS</a>
+
             </div>
         </div>
-
     </section>
     <!--Fin de seccion 3-->
-    <br>
+
     <!--Inicio seccion 4: Detalles de los servicios que se realizan-->
-    <section id="servicios">
-        <!--Esta seccion lleva 6 imagenes, cada una detallando el servicio que se realiza. El nombre de cada servicio esta dentro de la imagen-->
-        <img src="imagenes/corte.jpg" alt="Corte de pelo">
-            <h4>CORTE</h4>
-        <img src="imagenes/alisado.jpg" alt="Alisados">
-            <h4>ALISADOS</h4>
-        <img src="imagenes/tratamiento.jpg" alt="Tratamientos">
-            <h4>TRATAMIENTOS</h4>
-        <img src="imagenes/color.jpg" alt="Color">
-            <h4>COLOR</h4>
-        <img src="imagenes/peinados.jpg" alt="Peinados">
-            <h4>PEINADOS</h4>
-        <img src="imagenes/lifting.jpg" alt="Lifting de pestañas">
-            <h4>LIFTING</h4>
+    <section class="servicios min-vh-100 mt-4" id="servicios">
+        <div class="container-lg">
+            <div class="row gy-5 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col">
+                    <img src="imagenes/alisado.jpg" class="ser-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/color.jpg" class="ser-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/corte.jpg" class="ser-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/lifting.jpg" class="ser-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/peinados.jpg" class="ser-item" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/tratamiento.jpg" class="ser-item" alt="">
+                </div>
+            </div>
+        </div>
     </section>
     <!--fin de seccion 4-->
 
     <!--Inicio de seccion 5: Vista previa de novedades-->
-    <section>
-        <h4>NOVEDADES</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi numquam consectetur consequatur voluptates voluptatem. Laborum quia suscipit sunt quasi neque, quisquam odio culpa, quae excepturi commodi similique magnam asperiores ad.</p>
-        <a href="novedades.html">Ver mas</a>
-        <img src="imagenes/novedades.jpg" alt="Anuncio sobre nuevas tinturas">
+    <section class="novedades d-flex justify-content-center align-items-center bg-one mt-4">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imagenes/novedad-1.jpg" class="d-block w-60 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="imagenes/novedad-2.jpg" class="d-block w-60 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/novedad-3.jpg" class="d-block w-60 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
     <!--fin de seccion 5-->
 
     <!--Incio de seccion 6: En esta se detalla la direccion de local y los horarios de trabajo, sobre un mapa el cual ocupa el ancho de la pagina-->
-    <section>
-        <p>Juliana Retta BEAUTY</p>
-        <p>Direccion | Horarios de atencion</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.192260939172!2d-60.22232318519339!3d-33.33992659923364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76784fbdd3075%3A0xc10a14aebc9fc9da!2sAmeghino%20512%2C%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1642341547334!5m2!1ses!2sar" width="1400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section class="map p-3">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.192260939172!2d-60.22232318519339!3d-33.33992659923364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76784fbdd3075%3A0xc10a14aebc9fc9da!2sAmeghino%20512%2C%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1642341547334!5m2!1ses!2sar" width="1400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
     <!--Fin de seccion 6-->
      
     <!--Inicio de Footer-->
     <footer>
-        <p>TELEFONOS</p>
-        <a href="https://www.facebook.com/" target="_blank">
-            <i>
-                <img src="iconos/facebook.png" alt="icono de facebook">
-            </i>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-            <i>
-                <img src="iconos/instagram.png" alt="icono de instagram">
-            </i>
-        </a>
-        <a href="https://www.youtube.com/" target="_blank">
-            <i>
-                <img src="iconos/youtube.png" alt="icono de youtube">
-            </i>
-        </a>
+        <div class="footer d-flex justify-content-center align-items-center bg-one flex-column">
+            <img src="" alt="">
+            <h2>JULIANA RETTA BEAUTY</h2>
+            <h3>AMEGHINO 512 | SAN NICOLAS</h3>
+            <div class="redes">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+        </div>
     </footer>
     <!--Fin de Footer-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+  
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+            nav.classList.add('.bg-light', 'shadow');
+          } else {
+            nav.classList.remove('.bg-light', 'shadow');
+          }
+        });
+      </script>
 </body>
 </html>
