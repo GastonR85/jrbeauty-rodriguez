@@ -1,0 +1,96 @@
+/*Reset incial*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*Definicion de variables de CSS*/
+:root {
+    /*Articulos de lista*/
+    --ft-a:'Poppins', sans-serif;
+    --ft-b:'Lora', serif;
+    --color-a:#FFEDDB;
+    --color-b:#EDCDBB;
+    --color-c:#E3B7A0;
+    --color-d:#BF9270; 
+}
+/* BANNER*/
+.banner-imagen{
+    background-image: url("../imagenes/foto-inicio.jpg");
+    background-size: cover;
+}
+.banner-imagen .content{
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+} 
+.text-banner{
+    
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    width: 450px;
+    height: auto;
+
+}
+/*Seccion #1*/
+.bg-one{
+    background-color: #FFEDDB;
+}
+.container .title h2::after{
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: #E3B7A0;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+/*seccion 3*/
+.tienda .title h2::after{
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: #E3B7A0;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+.tienda-item{
+    max-width: 100%;
+}
+.tienda{
+    background-color: var(--color-b);
+    padding-bottom: 80px;
+}
+
+.tienda img {
+    background-color: #FFEDDB;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 5px;
+    width: 100%;
+}
+
+/*seccion 4*/
+
+.servicios{
+    background-color: var(--color-c);
+    padding: 80px 0;
+}
+
+.servicios img {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+ion-icon {
+    font-size: 64px;
+  }

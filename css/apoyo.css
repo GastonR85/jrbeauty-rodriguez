@@ -1,0 +1,150 @@
+/*Inicializacion*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-gradient:linear-gradient(310deg,rgba(255, 237, 219, 0.6) 0%,rgb(191, 146, 112,1) 100%);
+    --color-a:#FFEDDB;
+    --color-b:#EDCDBB;
+    --color-c:#E3B7A0;
+    --color-d:#BF9270; 
+    --boton-padding:20px 40px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 1900px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.subtitle{
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+.header{
+    height: 100vh; /*Va a ocupar el 100% de la altura de navegador*/
+    background-image: var(--bg-gradient), url("../imagenes/foto-inicio.jpg");
+    background-repeat: no-repeat; /*Par que no se repita la imagen*/
+    background-size: cover; /*para que abarque el 100% */
+    background-attachment: fixed; /*Efecto paralax*/
+    background-position: center; /*Para centrarlo*/
+    position: relative; /*Para posicionar la wave*/
+}
+
+.header .container{
+    padding: 0;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    align-items: center;
+    font-weight:400;
+}
+.nav-item{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit; /*Hereda la fuente del padre*/
+}
+/*Para resaltar este item*/
+.cta-item{
+    border: 1px solid white;
+    border-radius: 20px;        
+}
+
+.header-container {
+    display: flex;
+    height: calc(100vh - 50px); /*Es la altura total del header menos 70px que ocupa el nav*/
+    align-items:center; /*Centrado vertical*/
+    justify-content: flex-start;
+    color: white;
+}
+.header-text{
+    width: 80%;
+    margin-bottom: 50px;
+}
+.header-title{
+    font-size: 4rem;
+}
+.header-subtitle{
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+/*About*/
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px; 
+    justify-items: center;
+    align-items: center;
+}
+/*Textos*/
+.about-paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;    
+}
+/*Imagenes*/
+.about-img{
+    text-align: center;
+}
+.tx-left{
+    text-align: left;
+}
+.about-picture{
+    max-width: 80%;
+}
+
+/*Footer*/
+footer{
+    padding: 50px;
+    background-color: var(--color-d);
+}
+.footer-title{
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.footer-subtitle{
+    font-weight: 300;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.container-icons{
+    display: flex;
+    justify-content: center;
+}
+.icon-item{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.icon-footer{
+    color: inherit;
+    font-size: 30px;
+    text-decoration: none;
+}
+.fa-brands.icon-footer{
+    line-height: 60px;
+}
